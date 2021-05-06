@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://friedfrankalumni.com/login/login.aspx -->
+<html class="no-js isDesktop"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Alumni Network | Fried Frank | Login</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!--[if lte IE 9]>
+	<script>
+		var tags = 'abbr article aside audio canvas datalist details figure footer header hgroup mark menu meter nav output progress section time video'.split(' ');
+		for (var i = 0; i < tags.length; i++) {
+			document.createElement(tags[i]);
+		}
+	</script>
+<![endif]-->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./index_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-79647908-3');
+</script>
+    <script type="text/javascript" src="./index_files/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./index_files/angular-1.4.7.min.js"></script>
+    <script type="text/javascript" src="./index_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./index_files/app.js"></script>
+    <script type="text/javascript" src="./index_files/tabController.js"></script>
+    <script type="text/javascript" src="./index_files/main.js"></script>
+    <link href="./index_files/css" rel="stylesheet">
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+<link rel="stylesheet" href="./index_files/font-icons.css">
+<link rel="stylesheet" href="./index_files/lightbox.css">
+<!--[if !(IE 7)]><!--><link rel="stylesheet" href="./index_files/main.css"><!--<![endif]-->
+
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/_js/plugins/selectivizr-min.js"></script>
+	<script type="text/javascript" src="/_js/html5shiv.js"></script>
+	<script type="text/javascript" src="/_js/respond.js"></script>
+	<link rel="stylesheet" href="/_css/ie.css">
+<![endif]-->
+
+</head>
+<body class="login ng-scope" ng-app="vxChartApp" data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="">
+    <div class="wrapper">
+        <header class="row type-two">
+            <div class="row-content">
+                <div class="col-lg-12 logo">
+                    <a href="https://friedfrankalumni.com/">
+                        <!--# file="../_inc/svg-logo.aspx"-->
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="login-container">
+            <div class="login-box ng-scope" ng-controller="tabController">
+                <ul class="tabs">
+                    <li ng-class="{selected: tab == &#39;tab-one&#39;}" class="selected"><a href="javascript:void(0)" ng-click="tabbing(&#39;tab-one&#39;)">Login</a></li>
+                    <li ng-class="{selected: tab == &#39;tab-two&#39;}"><a href="javascript:void(0)" ng-click="tabbing(&#39;tab-two&#39;)">Register</a></li>
+                </ul>
+                <div class="content-area">
+                    <div class="login-content" ng-show="tab == &#39;tab-one&#39;">
+                        <header>
+                            <h2>Enter your email and password <strong>to sign in</strong></h2>
+                        </header>
+                        <section class="form">
+                            <div class=""> 
+	
+</div>
+<div class="login-form">
+	
+<form action="https://friedfrankalumni.com/API/Login" method="post" class="form ng-pristine ng-valid" role="form">
+  
+
+	<p class="form-group">
+		<label for="LoginEmailAddress">Email</label>
+		<input name="LoginBox$LoginEmailAddress" type="text" id="LoginBox_LoginEmailAddress" class="form-control" placeholder="Email">
+	</p>
+
+	<p class="form-group">
+		<label for="LoginPassword">Password</label>
+		<input name="LoginBox$LoginPassword" type="password" id="LoginBox_LoginPassword" class="form-control" placeholder="Password">
+	</p>
+
+	<p class="form-group">
+		<input type="submit" class="btn btn-default branded_button" value="Login">
+	</p>
+</form>
+
+
+	<div class="forgot-password">
+		<p><a href="https://friedfrankalumni.com/forgotten-password/forgotten-password.aspx">Forgot Your Password?</a></p>
+	</div>
+</div>
+<!--<div class="linkedin-login">
+	<span>Log In With</span>
+	<a href='/API/LinkedInLoginInitiator?action=login'>
+		<img src="../_images/button-linkedin-login.jpg" alt="LinkedIn" />
+	</a>
+</div>-->
+
+                        </section>
+                    </div>
+                    <div class="register-content ng-hide" ng-show="tab == &#39;tab-two&#39;">
+                        <header>
+                            <h2>Enter your personal details <strong>to create an account</strong></h2>
+                        </header>
+                        <section class="form">
+                            <div class=""></div>
+<div class="login-form registration">
+	<form method="post" action="https://friedfrankalumni.com/API/AlumniRegisterProfile" accept-charset="utf-8" enctype="multipart/form-data" class="form ng-pristine ng-valid" role="form">
+		<p class="form-group">
+	        <label for="IAForm_FirstName">First Name</label>
+			<input type="text" value="" id="IAForm_FirstName" class="form-control required" name="IAForm_FirstName" maxlength="250" placeholder="First name">
+		</p>
+		<p class="form-group">
+			<label for="IAForm_LastName">Last Name</label>
+			<input type="text" value="" id="IAForm_LastName" class="form-control required" name="IAForm_LastName" maxlength="250" placeholder="Last name">
+		</p>
+		<p class="form-group">
+	        <label for="VxForm_Email">Email</label>
+			<input type="text" value="" id="IAForm_Email" class="form-control email required" name="IAForm_businessElectronicAddress" maxlength="250" placeholder="Email">
+		</p>
+		<div class="form-group">
+			<div class="radio-list">
+				
+						<div class="radio"><input type="radio" name="FolderSitePageId" value="1903"><span>Current Employee</span></div>
+					
+						<div class="radio"><input type="radio" name="FolderSitePageId" value="1680"><span>Alumni</span></div>
+					    
+			</div>
+		</div>
+	<p class="form-group">
+			<button class="btn btn-default branded_button" type="submit">Join Now</button>
+	</p>
+		
+	</form>
+</div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- ReportSnippetChartInitBlockStart --><!-- ReportSnippetChartInitBlockEnd --></body></html>
